@@ -16,7 +16,9 @@
 // FUNCTION TO HANDLE THE BASIC LOADING OF PAGES
 async function load() {
   // Get relative path
+  console.log('pathname is... ', location.pathname)
   const pre = location.pathname === '/' ? '.' : '..'
+  console.log('pre is... ', pre)
 
   // Get/write body elements: <header>, <main>, <footer>
   const header = await $.get(`${pre}/components/header.html`, function (data) {
