@@ -17,11 +17,11 @@
 async function load() {
   // Get relative path
   console.log('pathname is... ', location.pathname)
-  const pre = location.pathname === '/' ? '.' : '..'
+  const pre = location.pathname === '/weird_website/' ? '.' : '..'
   console.log('pre is... ', pre)
 
   // Get/write body elements: <header>, <main>, <footer>
-  const header = await $.get(`./components/header.html`, function (data) {
+  const header = await $.get(`${pre}/components/header.html`, function (data) {
     return data
   })
 
