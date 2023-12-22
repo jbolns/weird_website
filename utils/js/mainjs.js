@@ -21,7 +21,7 @@ async function load() {
   console.log('pre is... ', pre)
 
   // Get/write body elements: <header>, <main>, <footer>
-  const header = await $.get(`${pre}/components/header.html`, function (data) {
+  const header = await $.get(`./components/header.html`, function (data) {
     return data
   })
 
