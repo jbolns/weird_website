@@ -1,0 +1,12 @@
+[
+  {
+    "name": "linkedin",
+    "url": "https://www.linkedin.com/company/polyzentrik/",
+    "image": "images/socials/linkedin.webp"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/jbolns/WEIRD",
+    "image": "images/socials/github.webp"
+  }
+]

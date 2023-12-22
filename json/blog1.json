@@ -1,0 +1,48 @@
+[
+  {
+    "filename": "ai-chicken",
+    "headline": "Why did the AI chicken cross the road?",
+    "intro": "<img alt=\"AI chicken crossing the road\" src=\"../images/blog/ai-chicken.jpeg\"/> ",
+    "categories": "cat1 cat3",
+    "date": [
+      "2023-12-06"
+    ]
+  },
+  {
+    "filename": "docm-blog",
+    "headline": "<span lang=\"EN-GB\">Blog entry from a .docm (Word) document</span>",
+    "intro": "<span lang=\"EN-GB\">This blog post was written in Word and\nsaved as a .docm (macro-enabled) Word document. The document gets automatically\nconverted into HTML by the WEIRD build process.</span>",
+    "categories": "cat1 cat2 cat3",
+    "date": "2023-12-01"
+  },
+  {
+    "filename": "docx-blog",
+    "headline": "Blog entry from a .docx (Word) document",
+    "intro": "This blog post was written in Word and saved as .docx. The document gets automatically converted into HTML by the WEIRD build process.",
+    "categories": "cat2 complex-cat",
+    "date": "2023-12-02"
+  },
+  {
+    "filename": "html-blog",
+    "headline": "Blog entry from an HTML document",
+    "intro": "This blog post was written in HTML. It exists as an .html file which gets included in the final website as part of\n    WEIRD's build process.",
+    "categories": "complex-cat cat3",
+    "date": "2023-12-03"
+  },
+  {
+    "filename": "image-preview",
+    "headline": "How to show images as part of the blog index? ",
+    "intro": "<img alt=\"\" src=\"../../images/blog/image-preview/image1.jpeg\"/>",
+    "categories": "cat2 cat3",
+    "date": "2023-12-04"
+  },
+  {
+    "filename": "markdown-blog",
+    "headline": "Blog entry from a MARKDOWN document",
+    "intro": "This blog post was written in markdown. It exists as an .md file which gets converted into HTML as part of WEIRD's build process.",
+    "categories": "cat3",
+    "date": [
+      "2023-12-05"
+    ]
+  }
+]

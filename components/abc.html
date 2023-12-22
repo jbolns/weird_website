@@ -1,0 +1,74 @@
+<section class="pages markdown">
+
+<p>(BTW. This page comes from a .md document)</p>
+<h2>HOW TO &gt; <em>Prerequisites</em></h2>
+<p><strong>1 <a href="https://www.python.org/downloads/">Python</a>,</strong> including:</p>
+<ul>
+<li><a href="https://pypi.org/project/beautifulsoup4/">Beautiful soup</a> - <em>pip install beautifulsoup4</em></li>
+<li><a href="https://pypi.org/project/docx2python/">Docx2Python</a> - <em>pip install docx2python</em></li>
+<li><a href="https://pypi.org/project/Markdown/">Markdown</a> - <em>pip install Markdown</em></li>
+<li><a href="https://pypi.org/project/pywin32/">Pywin32</a> - <em>pip install pywin32.</em></li>
+</ul>
+<p><strong>2 <a href="https://github.com/jbolns/weird">WEIRD</a>.</strong></p>
+<ul>
+<li>Fork/download/save WEIRD anywhere on your computer.</li>
+</ul>
+<p><strong>3</strong> At least one <strong>content document for the home page.</strong></p>
+<ul>
+<li>It is possible to upload more documents/pages, but you need at least one document for the home page. </li>
+<li>Do NOT use the word <em>"blog"</em> in document names.</li>
+<li>Supported formats: .html, .md, .docx, .docm.</li>
+</ul>
+<p><strong>4 Logo</strong> (300x300px), <strong>emoticon</strong> (75x75px), and <strong>social media preview</strong> (circa 1200x630px) images.</p>
+<hr />
+<h2>HOW TO &gt; <em>Set up a new WEIRD website (low-code)</em></h2>
+<p>Open WEIRD's folder and launch a terminal. Then...</p>
+<h3>Configuration</h3>
+<p>Run the configuration assistant: <strong>python config.py</strong>. </p>
+<p>Answer questions. Follow instructions. It's a surprisingly painless process. Probably easier to understand than this guide. </p>
+<p>That said, if you absolutely need a preview, it goes like this.</p>
+<p><strong>Required steps.</strong></p>
+<ul>
+<li><strong><em>System info.</em></strong> The assistant will ask about the name, author, type, and keywords for the websites, as well as the title and introduction for the header.</li>
+<li><strong><em>Blog settings.</em></strong> The assistant will then ask if the website needs a blog.</li>
+<li><strong><em>Images.</em></strong> Finally, the assistant will ask for the three images noted above as requirements.</li>
+</ul>
+<p><strong>Optional steps.</strong></p>
+<ul>
+<li><strong><em>Social media.</em></strong> The assistant will ask for the links for desired social media channels.</li>
+<li><strong><em>Pages.</em></strong> The assistant will ask for documents to set up as pages. It will also ask if images were referenced in HTML or Markdown documents (relative path: ../images/pages/filename), in which case it will open a file explorer to upload the images.</li>
+<li><strong><em>Blog entries.</em></strong> The assistant will ask for documents to set up as blog entries. It will also ask if images were referenced in HTML or Markdown documents (relative path: ../images/blog/filename), in which case it will open a file explorer to upload the images.</li>
+</ul>
+<h3>Build</h3>
+<p>Run the build assistant and follow any instructions: <strong>python build.py</strong>.</p>
+<p>The only thing the build assistant will ask is for the author, date, and categories of any blog entries NOT in Markdown (for Markdown documents, use Markdown's author, date, and categories meta-information syntax). </p>
+<p>If there are no such documents, the assistant will not ask anything.</p>
+<h3>Serve</h3>
+<p>Weird comes with a local server. To run: <strong>python -m http.server</strong>.</p>
+<p>Unfortunately, we haven't yet configured an assistant to facilitate hosting. You're going to have to figure this out by yourself. WEIRD produces static websites, though. Should be straightforward.</p>
+<hr />
+<h2>HOW TO &gt; <em>Update an existing WEIRD website (low-code)</em></h2>
+<p>The assistants in the previous sections re-write the settings and re-create the entire build. This is inconvenient if all you want is to update or add to the websites.</p>
+<h3>Incremental updates</h3>
+<p>To update or add pages or blogs without re-writing the entire build, run: <strong>python add.py</strong>.</p>
+<p>It's a surprisingly painless process. </p>
+<p>To add a page or a blog add a new document with a different filename than existing ones. To update an existing page or blog entry, simply use the filename of an existing page/blog.</p>
+<p>The flow of actions is pretty much the same as described in earlier sections</p>
+<ul>
+<li><strong>Type.</strong> Assistant asks if you are creating/updating a page or a blog entry</li>
+<li><strong>Document.</strong> The assistant initiates a file explorer for you to upload the document</li>
+<li><strong>Images.</strong> The assistant asks for any images referenced in HTML or Markdown code (relative path: ‘../images/pages/filename’ or ‘../images/blog/filename’, as appropriate)</li>
+<li><strong>Meta-information.</strong> When uploading a blog entry NOT written in Markdown, the assistant asks for author, date, and categories for it.</li>
+</ul>
+<hr />
+<h2>HOW TO &gt; <em>Reset an existing WEIRD website (low-code)</em></h2>
+<p>To clear a biuld or the entire configuration for a WEIRD website, run: <strong>python reset.py</strong>.</p>
+<p>This will clear any pre-existing build regardless. It will also ask you if you want to delete non-core files. If you answer 'yes', the WEIRD folder will be reset entirely.</p>
+<hr />
+<h2>HOW TO &gt; <em>Use WEIRD solely as a web framework (coding required)</em></h2>
+<p>If you know Python, HTML, CSS, and JS, you can skip all the assistants and use WEIRD only as a web framework.</p>
+<p>Pending.</p>
+<p>.</p>
+<p>.</p>
+
+</div></section>
